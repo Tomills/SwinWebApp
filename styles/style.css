@@ -1,0 +1,543 @@
+/*
+filename: style.css
+author: Tom Mills
+created: 20/03/2019
+last modified: 25/05/2019
+description: refers to 'index.php', 'jobs.php, 'apply.php', 'about.php', 'enhancements.php', 'enhancements2.php', 
+    'enhancements3.php', 'manage.php', 'status.php', 'delete.php', 'deleteJobRef.php', 'processEOI.php'
+*/
+
+
+/* The following group of code is styling for MENU AND NAVIGATION BAR */
+#logo {
+    width: 200px;
+    height: 100px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li:before {
+    content: none;
+    padding-right: 0;
+    padding-left: 0;
+}
+nav ul li {
+    text-decoration: none;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 2em;
+    display: inline-block;
+    color: white;
+}
+a:hover {
+    color: rgb(145, 145, 145, 0.9);
+}
+a img:hover {
+    opacity: 0.5;
+}
+a img:active {
+    width: 210px;
+}
+.menu {
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+#index-menu {
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+#jobs-menu {
+    background-image: url("images/crew-56835-unsplash.jpg");
+    background-position: 60% 143%;
+    background-color: rgba(128, 128, 128, 0.4);
+    background-blend-mode: multiply;
+    padding-bottom: 120px;
+    padding-top: 10px;
+}
+#apply-menu {
+    background-image: url("images/blank-business-composition-373076.jpg");
+    background-position: 60% 70%;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 15%;
+    padding-top: 15px;
+
+}
+#about-menu {
+    background-image: url("images/computer-gadgets-iphone-163143.jpg");
+    background-position: 60% 120%;
+    background-color: rgba(128, 128, 128, 0.4);
+    background-blend-mode: multiply;
+    padding-bottom: 120px;
+    padding-top: 15px;
+}
+footer {
+    font-size: 0.75em;
+    margin: 10em 5em 1em 5em;
+    text-align: center;
+    clear: both;
+}
+footer p {
+    display: inline;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+#my-link {
+    font-size: 1em;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+}
+
+
+/* The following group of code is styling for TEXT-EDITING */
+h1 {
+    font-size: 4em;
+    font-weight: 100;
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: 100;
+}
+p {
+    font-size: 1em;
+}
+.white-text {
+    color: white;
+}
+.black-text {
+    color: black;
+}
+.centuryfont {
+    font-family: 'Century Gothic', Helvetica, sans-serif;
+    font-weight: 100;
+}
+.spaced-letters {
+    letter-spacing: 0.1em;
+}
+
+
+/* The following group of code is styling for INDEX.HTML */
+#index-bg {
+    background-image: url("images/board-circuit-board-circuits-825258.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(100, 100, 100, 0.9);
+    background-blend-mode: multiply;
+}
+#intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+#intro-content {
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5em;
+    text-align: justify;
+    font-weight: 100;
+    margin: 5em;
+}
+
+
+/* The following group of code is styling for JOBS.HTML */
+.job-title {
+    font-size: 1.5rem;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.job-desc {
+    font-size: 0.9em;
+    padding-left: 4%;
+    padding-right: 5%;
+}
+ol li {
+    margin-left: 2%;
+}
+.no-list-style {
+    list-style: none;
+}
+.text-indent {
+    padding-left: 6%;
+    text-indent: -2.1%;
+}
+aside {
+    float: right;
+    border-left: 1px solid rgba(128, 128, 128, 0.4);
+    width: 25%;
+    text-align: center ;
+    padding: 5% 2% 5% 2% ;
+    margin: 2em;
+}
+ul li:before{
+    content: "-";
+    padding-right: 20px;
+}
+.apply {
+    color: black;
+    font-size: 2.5em;
+    line-height: 300px;
+    text-decoration: none;
+    padding: 50px;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right,white, white, gray, gray, white, white) 1 1%;
+}
+@keyframes draw-border {
+    0% {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-image: linear-gradient(to right,white, white, gray, gray, white, white) 1 1%;
+    }
+    20% {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-image: linear-gradient(to right,white, gray, gray, white) 1 1%;
+    }
+    40% {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-image: linear-gradient(to right,gray, gray, white, white, gray, gray) 1 1%;
+    }
+    60% {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-image: linear-gradient(to right,gray, white, white, white, white, gray) 1 1%;
+    }
+    80% {
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-image: linear-gradient(to bottom,gray, white, white, gray) 1 1%;
+    }
+    100% {
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-image: linear-gradient(to bottom,white, gray, gray, white) 1 1%;
+    }
+}
+.apply:hover {
+    animation-name: draw-border;
+    animation-duration: 0.2s; 
+    animation-timing-function: ease-in-out; 
+    border: 1px solid;
+    border-image: linear-gradient(to bottom, white, white, gray, gray, white, white) 1 1%;
+}
+
+
+/* The following group of code is styling for APPLY.HTML */
+
+input[type=text], input[type="email"], input[type="submit"], input[type="reset"], input[type="button"], input[type="password"] {
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 10px 20px;
+    margin: 10px;
+    width: 60%;
+    text-align: center; 
+}
+input[type="button"], input[type="submit"], input[type="reset"]{
+    background-color: rgb(200, 200, 200);
+    color: white;
+}
+input[type=submit]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    opacity: 0.5;
+}
+.radio, .checkbox, #timer {
+    padding: 20px;
+    font-size: 12px;
+}
+#state-title {
+    font-size: 15px;
+}
+textarea {
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 20px;
+    font-family: 'Century Gothic', Helvetica, sans-serif;
+    font-size: 0.6em;
+}
+#applyForm {
+    text-align: center;
+    display: block;
+    background-color: white;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin-top: 10%;
+}
+fieldset {
+    border: none;
+}
+legend {
+    width: 100%;
+    text-align: center;
+}
+#skills {
+    margin-top: 3%;
+}
+.footer-bg {
+    margin-top: 2em;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 0;   
+}
+.errMsg {
+    font-size: 0.7em;
+    color: rgb(255, 0 , 0);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+
+
+/* The following group of code is styling for ABOUT.HMTL */
+dl {
+    padding-left: 15%;
+    padding-top: 5%;
+    line-height: 2em;
+    font-size:1.4em;
+    padding-right: 45%;
+}
+dl dt {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+dl dd, dl dt, dl dd a {
+    display: inline;
+}
+figure #my-photo {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    margin-top: 10%;
+    margin-right: 10%;
+    float: right;
+    border-radius: 2px;
+    padding: 3px;
+}
+table th{
+    padding: 0.2em;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+}
+.cell-border {
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    border-radius: 2px;
+    text-align: center;
+    padding: 3%;
+}
+table {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 2px;
+    padding: 1em;
+}
+#table {
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-right: 55%;
+}
+#table p {
+    font-size: 1.4em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    line-height: 2em;
+}
+
+/* The following group of code is styling for ENHANCEMENTS.HTML */
+#enhancements-bg {
+    background-image: url("images/pexels-photo-735911.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(128, 128, 128, 0.9);
+    background-blend-mode: multiply;
+    background-position: 100% 60%;
+}
+aside:target, #saveButton:target, #timer:target, #sort-by:target {
+    border: 10px solid red;
+}
+ul li {
+    list-style: none;
+}
+.enhancements-desc {
+    text-align: left;
+    padding: 5%;
+}
+.enhancements-desc a {
+    text-decoration: underline;
+}
+
+/* The following group of code is styling for ENHANCEMENTS2.HTML */
+#enhancements2-bg {
+    background-image: url("images/blur-close-up-computer-keyboard-1034647.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(128, 128, 128, 1);
+    background-blend-mode: multiply;
+    background-position: 100% 90%;
+}
+
+
+
+/* The following group of code is styling for NAVIGATION MENU ICON AND MEDIA QUERY */
+#menu-icon {
+    display: none;
+    width:  100px;
+    height: 80px;
+    background-position: center;
+}
+
+@media screen and (max-device-width: 768px) {
+   
+    body {
+        max-width: 768px;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav:active ul, nav ul {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+        width: 75%;
+        text-align: left;
+        font-size: 1.3em;
+        padding: 0.4em 0.5em 0.2em 0.5em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    nav:hover ul {
+        display: block;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #intro-content {
+        text-align: center;
+        margin: 1em;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    footer {
+        margin: auto;
+        text-align: center;
+        clear: both;
+        margin-top: 10em;
+    }
+    footer p {
+        display: block;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    aside {
+        float: none;
+    }
+    .apply {
+        font-size: 1.3em;
+        line-height: 5%;
+        padding: 5%;
+    }
+    .job-title {
+        font-size: 1.3em;
+        padding: 20% 0 0 10%;
+    }
+    .checkbox, .radio {
+        display: block;
+    }
+    figure #my-photo {
+        width: 80%;
+        height: auto;
+        background-position: center;
+    }
+    dl {
+        font-size: 0.7em;
+        padding-right: 0;
+    }
+    dl dd {
+        width: 75%;
+    }
+    #table {
+        padding-left: 5%;
+        padding-top: 5%;
+        table-layout: fixed;
+        width: 90%;
+        padding-right: 0;
+    }
+    #table p {
+        font-size: 1.3em;
+        border: none;
+        line-height: 0.5em;
+    }
+    tr td, tr th {
+        font-size: 0.7em
+    }
+    .enhancements-desc {
+        font-size: 80%;
+    }
+    .enhancements-h {
+        font-size: 1.7em;
+    }
+    .text-indent {
+        padding-left: 10%;
+        text-indent: -8%;
+    }
+}
+
+@media screen and (max-device-width: 1100px) {
+    figure #my-photo {
+        float: none;
+    }
+}
+
+
+/* The following is styling for MANAGEMENT PHP PAGES */
+
+.gray-bg {
+    background-color: darkgray;
+    margin-top: -1%;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+.manage {
+    margin: 1%;
+    padding: 1%;
+}
+.bl-on-whi {
+    background-color: white;
+    color: black;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
